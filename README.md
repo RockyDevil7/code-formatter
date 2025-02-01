@@ -1,6 +1,6 @@
 # CodeFormatter by RockyEmpire
 
-![CodeFormatter](https://rockyempire.org/logo.png)
+![CodeFormatter](https://cf.rockyempire.org)
 
 🚀 **Beautify, Minify & Format Your Code Instantly** – A free online tool to enhance your coding experience! Supports **JavaScript, HTML, CSS, and JSON**.
 
@@ -14,10 +14,7 @@
 ✅ **Ad-Friendly Design** – Monetization-ready with designated ad spaces.  
 
 ## 🔗 Live Demo
-Try it now: **[codeformatter.rockyempire.org](https://codeformatter.rockyempire.org)**
-
-## 📸 Screenshots
-![Screenshot](https://rockyempire.org/codeformatter-screenshot.png)
+Try it now: **[codeformatter.rockyempire.org](https://cf.rockyempire.org)**
 
 ## 🚀 Getting Started
 
