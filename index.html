@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeFormatter by RockyEmpire - A free online tool to beautify, minify, and format your code instantly. Supports JavaScript, HTML, CSS, and JSON.">
+    <meta name="keywords" content="code formatter, beautify code, minify code, online code editor, JavaScript formatter">
+    <meta name="author" content="RockyEmpire">
+    <meta property="og:title" content="CodeFormatter by RockyEmpire">
+    <meta property="og:description" content="Beautify, Minify & Format Your Code Instantly">
+    <meta property="og:image" content="https://rockyempire.org/logo.png">
+    <meta property="og:url" content="https://rockyempire.org/codeformatter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeFormatter by RockyEmpire">
+    <meta name="twitter:description" content="Beautify, Minify & Format Your Code Instantly">
+    <meta name="twitter:image" content="https://rockyempire.org/logo.png">
+    <title>CodeFormatter by RockyEmpire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #0d0d0d; color: #fff; text-align: center; padding: 20px; }
+        h1 { font-size: 2.8em; color: #a855f7; text-shadow: 0 0 20px #a855f7; }
+        .top-left-links { position: absolute; top: 15px; left: 15px; }
+        .top-left-links a { margin-right: 15px; color: #a855f7; font-size: 18px; text-decoration: none; }
+        textarea { width: 100%; height: 250px; background: #1a1a1a; color: #fff; border-radius: 10px; padding: 12px; font-size: 16px; border: 3px solid #a855f7; box-shadow: 0 0 15px #a855f7; }
+        .buttons { margin-top: 15px; display: flex; justify-content: center; gap: 15px; }
+        button { padding: 14px 24px; border: none; cursor: pointer; font-size: 18px; border-radius: 8px; transition: 0.3s; }
+        .btn-format { background: #a855f7; color: white; box-shadow: 0 0 20px #a855f7; }
+        .btn-minify { background: #ec4899; color: white; box-shadow: 0 0 20px #ec4899; }
+        .btn-copy { background: #22d3ee; color: white; box-shadow: 0 0 20px #22d3ee; }
+        .btn-download { background: #facc15; color: black; box-shadow: 0 0 20px #facc15; }
+        button:hover { transform: scale(1.1); filter: brightness(1.2); }
+        pre { text-align: left; padding: 12px; background: #1a1a1a; border-radius: 10px; overflow-x: auto; border: 3px solid #a855f7; box-shadow: 0 0 15px #a855f7; }
+        footer { margin-top: 20px; font-size: 14px; color: #888; }
+        .ads { margin: 20px auto; background: #222; padding: 20px; border-radius: 10px; width: 90%; box-shadow: 0 0 15px #444; text-align: center; color: #a855f7; font-weight: bold; }
+        .social-links { margin-top: 20px; }
+        .social-links a { color: #a855f7; margin: 0 10px; font-size: 24px; transition: 0.3s; }
+        .social-links a:hover { color: #ec4899; transform: scale(1.2); }
+    </style>
+</head>
+<body>
+    <div class="top-left-links">
+        <a href="https://patreon.rockyempire.org" target="_blank"><i class="fab fa-patreon"></i> Patreon</a>
+        <a href="https://discord.rockyempire.org" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+    </div>
+    <h1><i class="fas fa-code"></i> CodeFormatter by RockyEmpire</h1>
+    <p>Beautify, Minify & Download Your Code Instantly</p>
+    <div class="ads">Ad Space 1</div>
+    <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+    <div class="buttons">
+        <button class="btn-format" onclick="beautifyCode()"><i class="fas fa-magic"></i> Beautify</button>
+        <button class="btn-minify" onclick="minifyCode()"><i class="fas fa-compress"></i> Minify</button>
+        <button class="btn-copy" onclick="copyToClipboard()"><i class="fas fa-copy"></i> Copy</button>
+        <button class="btn-download" onclick="downloadCode()"><i class="fas fa-download"></i> Download</button>
+    </div>
+    <div class="ads">Ad Space 2</div>
+    <pre><code id="output" class="language-js"></code></pre>
+    <div class="ads">Ad Space 3</div>
+    <footer>
+        © 2025 CodeFormatter by RockyEmpire | <a href="#">Privacy Policy</a><br>
+        <div class="social-links">
+            <a href="https://patreon.rockyempire.org" target="_blank"><i class="fab fa-patreon"></i></a>
+            <a href="https://discord.rockyempire.org" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
