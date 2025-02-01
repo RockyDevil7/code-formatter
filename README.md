@@ -14,7 +14,7 @@
 ✅ **Ad-Friendly Design** – Monetization-ready with designated ad spaces.  
 
 ## 🔗 Live Demo
-Try it now: **[codeformatter.rockyempire.org](https://cf.rockyempire.org)**
+Try it now: **[cf.rockyempire.org](https://cf.rockyempire.org)**
 
 ## 🚀 Getting Started
 
