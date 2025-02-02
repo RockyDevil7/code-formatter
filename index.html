@@ -64,7 +64,7 @@
     <footer>© 2025 CodeFormatter by RockyEmpire | <a href="#">Privacy Policy</a></footer>
     <script>
         function detectLanguage(code) {
-            if (/<!DOCTYPE|<html|<body/.test(code)) return "html";
+            if (/<!DOCTYPE|<html/.test(code)) return "html";
             if (/function|const|let|var|=>/.test(code)) return "babel";
             if (/\{|\}/.test(code)) return "css";
             if (/module\.exports|require\(/.test(code)) return "typescript";
@@ -76,7 +76,7 @@
             let input = document.getElementById("codeInput").value;
             let lang = detectLanguage(input);
             try {
-                let formattedCode = prettier.format(input, { parser: lang });
+                let formattedCode = prettier.format(input, { parser: lang, plugins: prettierPlugins });
                 document.getElementById("beautifiedOutput").textContent = formattedCode;
             } catch (error) {
                 document.getElementById("beautifiedOutput").textContent = "Error in formatting: " + error;
